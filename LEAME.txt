@@ -6,3 +6,5 @@ Aquí está nuestra página verificada, los integrantes somos:
 - Miguel Angel Lopez Deza
 
 Aquí esta el link de netlify:
+
+https://mellifluous-lebkuchen-4eb13e.netlify.app
