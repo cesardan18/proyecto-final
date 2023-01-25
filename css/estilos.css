@@ -1,0 +1,92 @@
+/* ESTILOS GENERALES */
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section[id] {
+    scroll-margin-top: 3.75rem;
+}
+/**/
+
+
+/* SOMBRA DE CARDS */
+.card {
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 35%;
+}
+.card:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+/**/
+
+
+/* HOVER PARA MENÚ */
+#menu>li>a:hover {
+    color: #27a2e9;
+    transform: scale(1.2);
+}
+#logo:hover {
+    transform: scale(1.1);
+}
+a:link {
+    text-decoration: none;
+}
+/**/
+
+
+/* IMAGEN DE INICIO */
+#cont-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.9)), url("/img/body/inicio.webp");
+    background-size: cover;
+    background-position: center;
+}
+#centrado {
+    text-align: center;
+    color: whitesmoke;
+}
+/**/
+
+
+/* ANIMACIÓN PARA CARTAS DE SERVICIO */
+.flip-card {
+    background-color: transparent;
+    width: 18.75rem;
+    height: 25rem;
+    perspective: 62.5rem;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: #212529;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+
+}
+/**/
